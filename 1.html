@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> SPACE </title>
+    <link rel=" stylesheet " href="2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Slab:wght@900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto+Slab:wght@900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="container">
+    <nav class="nav-bar">
+        <a href="#" class="icon-link"><img class="nav-icon" alt="company-icon"
+                src="starter-code\assets\shared\logo.svg"> </a>
+        <a href="#" class="nav-link"><img class="nav-close-icon" id="navopenclose" src="8989824951558096338.svg"> </a>
+
+        <div class="navBarWithItems">
+            <a href="#"> HOME </a>
+            <a href="#"> DESTINATION </a>
+            <a href="#"> CREW </a>
+            <a href="#"> TECHNOLOGY </a>
+        </div>
+    </nav>
+    <div id="nav" class="navBarWithItemstoggle" style="display: none;">
+        <a href="#"> HOME </a>
+        <a href="#"> DESTINATION </a>
+        <a href="#"> CREW </a>
+        <a href="#"> TECHNOLOGY </a>
+    </div>
+    <div class="flex">
+        <div class="sub-flex">
+            <p class="preheading"> SO, YOU WANT TI TRAVEL TO </p>
+            <h1 class="main-heading"> SPACE </h1>
+            <p class="detailed"> Let's face it; if you want to go to space, you might
+                as well genuinely go to outer space and not hover kind
+                of on the edge of it. Well sit back, and relax because
+                we'll give a truly out of this world experience </p>
+        </div>
+        <a class="explore-btn" href="#"> EXPLORE </a>
+
+    </div>
+</body>
+
+<script>
+
+    function opennav() {
+
+        var x = document.getElementById("nav");
+        if (x.style.display === "none") {
+            x.style.display = "flex";
+        }
+        else {
+            x.style.display = "none";
+
+
+        }
+    }
+    document.getElementById("navopenclose").addEventListener("click", opennav);
+</script>
+
+</html>
